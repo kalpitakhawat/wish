@@ -4,7 +4,6 @@
   display: block;
   position: relative;
   margin: -10em auto 0 auto;
-  z-index: 1000;
 }
 
 /* ============================================== Candle
@@ -93,11 +92,11 @@
 
 .text {
   color: #8b6a60;
+
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style:italic;
   text-align: center;
-  z-index: 1000;
   h1 {
     font-size: 1.4em;
   }
