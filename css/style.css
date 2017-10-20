@@ -1,0 +1,17 @@
+body{
+margin: 0;
+background-color: #004d40;
+height: 100%;
+-webkit-transition: background-color 8s ease-in-out;
+-moz-transition: background-color 8s ease-in-out;
+-o-transition: background-color 8s ease-in-out;
+-khtml-transition: background-color 8s ease-in-out;
+transition: background-color 8s ease-in-out;
+}
+canvas {
+display:flex;
+}
+#canvas{
+  position: absolute;
+  top: 0;
+}
