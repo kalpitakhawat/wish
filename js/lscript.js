@@ -20,3 +20,7 @@ function newHeart () {
     setTimeout(newHeart, 200);
 }
 setTimeout(newHeart, 200);
+ $(window).load(function () {
+   $('#msg').html(window.atob($_GET('msg')));
+   $('#name').html(window.atob($_GET('name')));
+ });

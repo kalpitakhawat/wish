@@ -1,3 +1,5 @@
 $(window).load(function () {
-  $('#name').html($_GET('name')); 
+  $('#name').html(window.atob($_GET('name')));
+  $('#msg').html(window.atob($_GET('msg')));
+
 });

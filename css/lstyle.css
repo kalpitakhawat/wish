@@ -92,45 +92,31 @@
         -webkit-transform: scaleX(1) translateX(-5px);
     }
 }
-#wrapper {
-	position: absolute;
-  margin-left: 50% ;
-  margin-top: 50px;
-	animation:pulse 1s infinite;
+.blink_me {
+  animation: textgrowth 1s infinite alternate;
 }
 
-
-#pulsingheart {
-  position: relative;
-  width: 400px;
-  height: 360px;
+@keyframes textgrowth {
+    0% {
+    font-size: 20px;
+    color: #e53935;
+    }
+    100% {
+    font-size: 20.4px;
+    color: #f44336;
+    }
 }
-
-#pulsingheart:before, #pulsingheart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 200px;
-  height: 320px;
-  background: #aa0000;
-  border-radius: 200px 200px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-  animation:pulsecolor 1s infinite;
+.text{
+  position: absolute !important;
+  width: 100%;
+  text-align: center !important;
+  top: 14em;
 }
-
-#pulsingheart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin :100% 100%;
-  animation:pulsecolor 1s infinite;
+#msg{
+  text-transform: capitalize !important;
+  font-family: 'Satisfy', cursive;
 }
-
-@keyframes pulse {
-	10% {transform: scale(1.1)}
-}
-
-@keyframes pulsecolor {
-  10% {background: #dd0000}
+#name{
+  text-transform: capitalize !important;
+  font-family: 'Dancing Script', cursive;
 }
